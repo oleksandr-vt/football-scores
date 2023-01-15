@@ -1,0 +1,36 @@
+@import './base.css';
+
+body {
+    min-height: 100vh;
+    color: #212b36;
+    background: #f7f7f7;
+    font-family: 'Verdana', sans-serif;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+    width: 100%;
+    max-width: 1240px;
+    padding: 0 20px;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+.button {
+    width: 150px;
+    height: 40px;
+    background-color: #212b36;
+    color: #f7f7f7;
+    font-family: 'Verdana', sans-serif;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s all ease;
+}
+
+.button:hover {
+    background-color: #000;
+}
