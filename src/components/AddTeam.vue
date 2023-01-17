@@ -32,6 +32,8 @@ const addTeam = () => {
 
 <template>
     <div class="add-team">
+        <p class="text">Please enter at least two teams:</p>
+
         <form class="form" @submit.prevent @submit="addTeam">
             <input class="input" v-model="inputValue" minlength="2" maxlength="45" type="text"
                 placeholder="Enter a team">
@@ -49,6 +51,10 @@ const addTeam = () => {
                 <DeleteIcon @click="tableStore.deleteTeam(index)" />
             </li>
         </ul>
+
+        <button class="button button-large" v-if="tableStore.teams.length > 1" @click="tableStore.generateMatches">
+            Generate matches
+        </button>
     </div>
 </template>
 
@@ -103,6 +109,7 @@ const addTeam = () => {
     align-items: center;
     flex-wrap: wrap;
     gap: 12px;
+    margin-bottom: 16px;
 }
 
 .list-item {

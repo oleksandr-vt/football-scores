@@ -34,3 +34,11 @@ body {
 .button:hover {
     background-color: #000;
 }
+
+.button.button-large {
+    width: 220px;
+}
+
+.text {
+    font-size: 18px;
+}
