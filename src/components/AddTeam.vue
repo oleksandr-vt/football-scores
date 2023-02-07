@@ -80,16 +80,9 @@ const addTeam = () => {
 }
 
 .input {
-    display: block;
     min-width: 280px;
     max-width: 400px;
     flex-grow: 1;
-    height: 40px;
-    padding: 5px 10px;
-    font-family: 'Verdana', sans-serif;
-    font-size: 16px;
-    border: 2px solid #8197AA;
-    border-radius: 4px;
 }
 
 .error {
